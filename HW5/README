@@ -1,0 +1,30 @@
+README file for hw0-yap
+
+THIS README FILE MUST BE INCLUDED IN EVERY PROGRAMMING ASSIGNMENT
+     (1) Name: Brynja Schultz
+     (2) NYU N-number: N-17899462
+     (3) Integrity Statement:
+     	       "I have done this work myself.
+	   	  -- Electronically Signed: [your name]" 
+     (4) Acknowledgements:
+	 	PLEASE describe any resources you have used
+			besides our lecture notes.
+		Name anyone you have discussed this homework with.
+		If there is nothing is acknowledge, say
+			"Nothing to acknowledge".
+---------------------------------------------------------------------
+Example:
+---------------------------------------------------------------------
+(1) Name: Chee Yap
+(2) NYU N-number: N-123456789
+(3) Integrity Statement:
+	1) I needed help with the file handling in Java, so I talked
+	to Dr. Marcelo Cicconet who shared the method ReadFile() in ATM.java
+	with me.  The rest of the code is work I did myself.
+	2) OK, I also took a snippet of code
+	from this website: http://javaCheat.com
+	-- Electronically Signed: Chee Yap
+(4) Acknowledgements: 
+	I have no other acknowlegements.  
+---------------------------------------------------------------------
+

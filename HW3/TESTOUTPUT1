@@ -1,0 +1,18 @@
+==> mode 1: random insert+search once
+
+ins(25)=true ins(28)=true ins(7)=true ins(33)=true ins(14)=true 
+ins(24)=true ins(34)=true ins(6)=true ins(18)=true ins(28)=false 
+ins(9)=true ins(33)=false ins(37)=true ins(23)=true ins(2)=true 
+ins(34)=false ins(32)=true ins(22)=true ins(36)=true ins(29)=true 
+This is the resulting tree:
+
+G=9:(G=28:(G=22:(G=18:(<14:14><18:18>)
+----|-----|-----|G=22:(<2:2><22:22>)
+----|-----|G=28:(G=24:(<23:23><24:24>)
+----|-----|-----|G=28:(<25:25><28:28>)
+----|G=9:(G=34:(G=32:(<29:29><32:32>)
+----|----|-----|G=34:(<33:33><34:34>)
+----|----|G=9:(G=6:(<36:36><37:37><6:6>)
+----|----|----|G=9:(<7:7><9:9>)
+
+10 is not found in tree

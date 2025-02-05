@@ -1,0 +1,64 @@
+JavaNotes:
+
+Graders have freedom to give up to 20% of the grades based
+on some of these considerations.
+
+(0) Organize your Java classes into these sections, in this order:
+		-- CONSTRUCTORS
+		-- MEMBERS
+		-- METHODS
+		-- MAIN METHOD
+(1) Avoid all access modifiers (private, protected, public)
+	-- the only "public" you need is in the header of the main method.
+	-- it follows that you must not use "getters" and "setters" for
+			your members!
+(2) Use "camel case" for names (if a name is composed of more than
+	one word, each subsequent word begins with a capital letter).
+		E.g.,  "TwoThreeTree", not "Two_three_tree" or "Twothreetree".
+(3) All class names must begin with a capitalized letter.
+		E.g., "class TwoThreeTree", not "class twoThreeTree".
+	All method and member names must begin with a small letter.
+		E.g., "search(String key)" and "int height",
+			not "Search(String key)" or "int Height".
+(4) The input and output for all your methods must be specified.
+	For variable, it is usually good to explain their significance.
+	Give a longer introduction to your classes.
+	Freely sprinkle short comments throughout your code.
+(5) Whenever possible, write meaningful methods that is
+	meaningful: e.g., for InternalNode class, you might write a method
+			int degree()
+	to return its degree.  If you find a snippet of your code appears
+	in more than one place, it is probably a good idea to write
+	a method to be used in those places!
+(6) Debugging: 
+	Try to write "unit tests" for non-trivial routines.
+	Write short print statements -- my favorite tool are:
+			void debug(String s){System.out.println(s);}
+			void dbug(String s){System.out.print(s);}
+		E.g., debug("height is "+ String.valueOf(ht));
+(7) The "valueOf(..)" method is useful for inter-conversion of types:
+		e.g., "String.valueOf(n)" is useful for creating strings.
+		e.g., "Integer.valueOf(s)" to get int values from strings.
+(8) Learn how to use "assertions" in your code
+	Insert assertions liberally in your code!
+	Our Makefile automatically turns on this at runtime.
+(9) Try to annotate the closing brackets of a program block:
+		E.g.,  int Fibonacci(int n) {
+					... your code ...
+					}//Fibonacci
+		E.g.,	for (int i=0; i<n; i++){
+					... your code ...
+					}//for
+(10) Remember de Morgan's law in your logic:
+			"not(A or B)"  is equivalent to "(not A) and (not B)"
+			"not(A and B)"  is equivalent to "(not A) or (not B)"
+		We noted this in the lecture of Sep30.
+(11) I saw that some students don't know how to compare strings.
+	These are basic Java primitives and any web search will turn
+	up more than enough answers.  We are talking about lexicographic
+	order of Strings, of course.  Eg.,  String s1 = "apple";  
+		if (s1.compareTo("orange") > 0) debug("apple > orange");
+
+--Chee
+29 Sep 2021
+

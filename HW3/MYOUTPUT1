@@ -1,0 +1,17 @@
+hw3, myOUTPUT :
+rm myOUTPUT
+/usr/bin/java -ea -classpath bin \
+		Tree23 111 10 0 \
+		2>&1 | tee -a myOUTPUT
+==> mode 1: random insert+search once
+
+ins(13)=true ins(10)=true ins(17)=true ins(17)=false ins(9)=true 
+ins(0)=true ins(4)=true ins(12)=true ins(17)=false ins(5)=true 
+This is the resulting tree:
+
+G=9:(G=13:(G=10:(<0:0><10:10>)
+----|-----|G=13:(<12:12><13:13>)
+----|G=9:(G=4:(<17:17><4:4>)
+----|----|G=9:(<5:5><9:9>)
+
+10 is not found in tree

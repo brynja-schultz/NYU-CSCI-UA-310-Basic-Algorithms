@@ -1,0 +1,139 @@
+hw3:  Implementing 2-3 trees (150 Points)
+============================
+DUE DATE: Tuesday 17 Oct.
+	HOW TO SUBMIT:
+	Please upload a zip file in GradeScope.
+	You can create the zip file by typing
+				"make myzip"
+	But first modify the make-include file so that the value of the
+			variable "myName" is your last name, not "yap",
+	and if necessary,
+			modify the target "myzip" in make-target.
+
+OVERVIEW:
+	Hw3 is a programming assignment, to implement 2-3 trees.
+
+	In this zip folder, you will find a Makefile and several java files.
+	The main one is Tree23.java.  The class Tree23 is an implementation
+	of 2-3 trees from our lectures, of course.
+
+0) YOU HAVE 3 MAIN TASKS IN THIS HOMEWORK:
+	(TASK 1)
+		Study the design and structures of our 23-Tree,
+		as found in Tree23.java, and associated Java files.
+		You cannot change our design.
+	(TASK 2)
+		Implement 4 methods in Tree23.java file:
+				find, search, insert, delete
+	(TASK 3)
+		Run "make test" and ensure that its output
+		agrees with our output as found in the provided file
+				TESTOUTPUT.
+		The output of "make test" is found in myOUTPUT.
+		Your goal is myOUTPUT and TESTOUTPUT to look the same.
+			Similarly "make test1" and "make test2" produce
+		the files myOUTPUT1 and myOUTPUT2.  They should look similar to
+		the our files, TESTOUTPUT1 and TESTOUTPUT2.
+		You must submit myOUTPUT, myOUTPUT1, myOUTPUT2 in the zip folder.
+
+	HINT: In general, for any target XXX, its output can be put into a
+		file called "myOUTFILE" if you type
+			:> make test > myOUTFILE
+		Here, ":>" is the terminal prompt.
+1) Our zip file contains these classes in .java files:
+			Util.java
+			Item.java
+			Node.java, InternalNode.java, LeafNode.java
+			Tree23.java
+	We have provided many of the needed methods (with
+		input and output specifications).  EVERYTHING HAS
+		ALREADY BEEN IMPLEMENTED FOR YOU except for
+		the following methods in Tree23.java:
+				find, search, insert, delete
+		Some of the methods found in other files
+			(esp. InternalNode.java)
+		are there for you to use, if you want.  
+		But you are free to ignore them and write your own methods!
+2) The Node class has two subclasses: LeafNode and InternalNode.
+	LeafNodes are easy to understand: they contains exactly one item.
+	InternalNodes are more complex: each InternalNode
+	has a member called "child" 
+				Node[] child[4];
+	This Node array is to store the 2 or 3 children in a normal
+	InternalNode.  However, the array has size 4 so that you can
+	temporarily store 4 children.  This is useful during insertion.
+	Moreover we use an array so that you can write a for-loop
+	to go through the children.  If the InternalNode has
+	degree d (i.e., has d children), then we assume that the children
+	are represented by the first d entries of the array (and the
+	rest are null).
+3) As usual, we provide a Makefile.  But it includes two
+	other files: make-include and make-target.
+	You MUST NOT modify Makefile.
+	You MAY modify make-include to suit your environment,
+	and MAY modify make-target to define your own targets for testing.
+4) The main method in Tree23.java takes the usual 3 int arguments:
+			ss (seed), nn (problem size), mm (mode).
+		We use the ``mode'' to decide what tests to do.
+		You must not modify the behavior of the first 99 modes,
+				mm=0, mm=1, mm=2, ..., mm=89, mm=99.
+	Why?  Because our own Makefile may create grading targets that
+	use the mode mm=99.
+	Feel free create your own targets for modes mm > 99,
+	and put them into the file make-target.  
+5) We define the Item class such that each "item" is
+	a pair (key,data) pair where key is a String,
+	and data is an int.  For convenience, we
+	have provided two constructors for Item:
+		Item(String s):	the key is the string s.
+		Item(int x):  	the key is String.valueOf(x).
+	In both cases, the data is a randomly generated integer. 
+	For convenience, I gave constructors of an item using either String's
+	or int's:
+         Item it = new Item("apple");  -- the data is randomly generated
+         Item it = new Item(7);        -- the key is string "7", data is 7
+	We use String comparison for keys.
+	This can give non-intuitive comparisons when the strings
+	are generated from int values:
+		E.g., the comparison (7 < 25) is true but
+		the comparison ("7" < "25") is false. 
+	More precisely, "7".compareTo("25") is >0.
+	This is NOT a bug, though confusing.
+6) For small examples, you can choose your own keys.  But
+	if you have large examples, e.g., nn=100 or nn=1000,
+	you definitely want to generate them randomly!
+	One way is 
+		Item it = new Item(rg.nextInt(100));
+	But if you really want strings, we use our Zoombini class
+	to generate Zoombini names as follows:
+		Zoombini zoom = new Zombini();
+		Item it = new Item(zoom.name());
+7) Your 2-3 tree should implement the following delete policy:
+		"Propose to the Left Sibling if you have a Left Sibling.
+			Else, propose to the Right Sibling."
+	Note: when node u proposes to sibling u' then
+		u' will split (if u'.degree=3) or merge (if u'.degree=2).
+		See our notes in hw1.
+8) We have implemented a method for displaying
+	a Tree23 is called "showTree()".  This is useful for debugging.
+	How to read the output of "showTree()"?
+	In TESTOUTPUT, you will see this output from showTree():
+          G=prune:(G=banana:(<apple:3><banana:8>)
+          --------|G=peach:(<orange:6><peach:8>)
+          --------|G=prune:(<pear:0><plum:3><prune:5>)
+	This means that the root has a guide given by "G=prune".
+	This root has three children whose guides are 
+			G=banana, G=peach, G=prune.
+	The children of G=banana contains two LeafNodes 
+			<apple:3> and <banana:8>
+	and so on.
+9) Please follow our guidelines about Java code
+	(see file JavaNotes in this folder).
+	Also, read "JavaNotes" in ClassWiki => ProgrammingHelp => Java.
+
+
+--Chee Yap
+Basic Algorithms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

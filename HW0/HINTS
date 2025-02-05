@@ -1,0 +1,21 @@
+BirthDay Paradox:
+	Hints for writing the program BdayParadox.java:
+
+0) Your goal is to replicate our outputs in the file
+				TestOutput
+	found in this folder.  
+
+1) We suggest that you process the standard command line arguments
+	(ss, nn, mm) following the example of Hello1.java.
+
+2) Similary, you should set up the random number generator using
+	seed "ss" following the example of Hello1.java
+
+3) Read JavaNotes.pdf in this folder for other hints.
+
+4) You must NOT randomly generate the days of the year by
+	first randomly generating the month (1-12),
+	and then randomly generating the day (1-31).
+
+--Chee Yap (Basic Algorithms)
+

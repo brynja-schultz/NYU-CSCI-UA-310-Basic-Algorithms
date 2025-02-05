@@ -1,0 +1,132 @@
+==> mode 0: unit test
+
+
+
+=============== BEGIN UNIT TEST ================
+
+================================================
+
+======> Inserting Fruits:
+ins(banana) = true
+ins(apple) = true
+ins(peach) = true
+split function called
+ins(orange) = true
+ins(apple) = false
+ins(prune) = true
+split function called
+ins(pear) = true
+ins(plum) = true
+Here is the final Fruit Tree:
+G=prune:(G=banana:(<apple:970><banana:293>)
+--------|G=peach:(<orange:697><peach:957>)
+--------|G=prune:(<pear:284><plum:612><prune:920>)
+
+
+ checkTree succeeds!
+
+======> Inserting sqrt(3) digits:
+ins(1) = true
+G=1:(<1:1>)
+
+ins(7) = true
+G=7:(<1:1><7:7>)
+
+ins(3) = true
+G=7:(<1:1><3:3><7:7>)
+
+split function called
+ins(2) = true
+G=7:(G=2:(<1:1><2:2>)
+----|G=7:(<3:3><7:7>)
+
+ins(0) = true
+G=7:(G=2:(<0:0><1:1><2:2>)
+----|G=7:(<3:3><7:7>)
+
+ins(5) = true
+G=7:(G=2:(<0:0><1:1><2:2>)
+----|G=7:(<3:3><5:5><7:7>)
+
+ins(0) = false
+G=7:(G=2:(<0:0><1:1><2:2>)
+----|G=7:(<3:3><5:5><7:7>)
+
+split function called
+ins(8) = true
+G=8:(G=2:(<0:0><1:1><2:2>)
+----|G=5:(<3:3><5:5>)
+----|G=8:(<7:7><8:8>)
+
+ins(0) = false
+G=8:(G=2:(<0:0><1:1><2:2>)
+----|G=5:(<3:3><5:5>)
+----|G=8:(<7:7><8:8>)
+
+Here is the final sqrt(3) Tree:
+G=8:(G=2:(<0:0><1:1><2:2>)
+----|G=5:(<3:3><5:5>)
+----|G=8:(<7:7><8:8>)
+
+
+ checkTree succeeds!
+
+======> Searching Fruits
+Fruit Tree: search(banana) succeeds
+Fruit Tree: search(cherry) fails
+
+======> Searching Digits
+Sqrt3 Tree: search(3) succeeds
+Sqrt3 Tree: search(4) fails
+
+=============== deleting fruits
+item to be deleted peach
+u's child @ 0 : orange
+u's child @ 1 : peach
+Fruit Tree after DELETE(peach):
+G=prune:(G=orange:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><plum:612><prune:920>)
+
+item to be deleted plum
+u's child @ 0 : pear
+u's child @ 1 : plum
+u's child @ 2 : prune
+Fruit Tree after DELETE(plum):
+G=prune:(G=orange:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+Fruit Tree after DELETE(apricot):
+G=prune:(G=orange:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+item to be deleted apple
+u's child @ 0 : apple
+u's child @ 1 : banana
+u's child @ 2 : orange
+Fruit Tree after DELETE(apple):
+G=prune:(G=orange:(<banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+
+=============== deleting digits
+item to be deleted 3
+u's child @ 0 : 3
+u's child @ 1 : 5
+Sqrt3 Tree after DELETE(3):
+G=8:(G=1:(<0:0><1:1>)
+----|G=5:(<2:2><5:5>)
+----|G=8:(<7:7><8:8>)
+
+item to be deleted 0
+u's child @ 0 : 0
+u's child @ 1 : 1
+Sqrt3 Tree after DELETE(0):
+G=8:(G=5:(<1:1><2:2><5:5>)
+----|G=8:(<7:7><8:8>)
+
+
+=============== END OF UNIT TEST ===============
+
+================================================
+
+

@@ -1,0 +1,85 @@
+m==> mode 0: unit test
+
+
+
+=============== BEGIN UNIT TEST ================
+
+================================================
+
+======> Inserting Fruits:
+ins(banana) = true
+ins(apple) = true
+ins(peach) = true
+ins(orange) = true
+ins(apple) = false
+ins(prune) = true
+ins(pear) = true
+ins(plum) = true
+Here is the final Fruit Tree:
+G=prune:(G=banana:(<apple:970><banana:293>)
+--------|G=peach:(<orange:697><peach:957>)
+--------|G=prune:(<pear:284><plum:612><prune:920>)
+
+
+ checkTree succeeds!
+
+======> Inserting sqrt(3) digits:
+ins(1) = true
+ins(7) = true
+ins(3) = true
+ins(2) = true
+ins(0) = true
+ins(5) = true
+ins(0) = false
+ins(8) = true
+ins(0) = false
+Here is the final sqrt(3) Tree:
+G=8:(G=2:(<0:0><1:1><2:2>)
+----|G=5:(<3:3><5:5>)
+----|G=8:(<7:7><8:8>)
+
+
+ checkTree succeeds!
+
+======> Searching Fruits
+Fruit Tree: search(banana) succeeds
+Fruit Tree: search(cherry) fails
+
+======> Searching Digits
+Sqrt3 Tree: search(3) succeeds
+Sqrt3 Tree: search(4) fails
+
+=============== deleting fruits
+Fruit Tree after DELETE(peach):
+G=prune:(G=peach:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><plum:612><prune:920>)
+
+Fruit Tree after DELETE(plum):
+G=prune:(G=peach:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+Fruit Tree after DELETE(apricot):
+G=prune:(G=peach:(<apple:970><banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+Fruit Tree after DELETE(apple):
+G=prune:(G=peach:(<banana:293><orange:697>)
+--------|G=prune:(<pear:284><prune:920>)
+
+
+=============== deleting digits
+Sqrt3 Tree after DELETE(3):
+G=8:(G=1:(<0:0><1:1>)
+----|G=5:(<2:2><5:5>)
+----|G=8:(<7:7><8:8>)
+
+Sqrt3 Tree after DELETE(0):
+G=8:(G=5:(<1:1><2:2><5:5>)
+----|G=8:(<7:7><8:8>)
+
+
+=============== END OF UNIT TEST ===============
+
+================================================
+
+

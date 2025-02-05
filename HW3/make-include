@@ -1,0 +1,64 @@
+# file: make-include
+#
+#	Please modify the contents of this file in order
+# 		to make our Makefile work in YOUR environment,
+#		and for personalization (e.g., giving your own name)
+#	The current file shows how I customize it for my
+#		Cygwin in Windows OS.
+#	I only customize for my Java compiler/interpreter and editor.
+#		Feel free to add other customizations here.
+#
+#############################################
+#	Prof. Chee Yap (Basic Algorithms)
+#############################################
+
+# Identification
+#	-- Careful: myName is your LASTNAME (all small letters)
+#		If your last name is non-unique (as noted in hw0),
+#		then you should add the first 3 letters of your first name.
+#		E.g., if you are Jianer Chen, then myName=chenJia.
+# FOR INSTRUCTORS: set myName=sol for producing solutions.
+myName=schultz
+hwNumber=3
+
+# Javac and Java 
+# ================================================
+#   Create a soft link from /JavaHome to the location of
+# 	my JDK installation:
+#		"/cygdrive/c/Program Files/Java/jdk-11.0.2/bin"
+# javac=/JavaHome/javac.exe
+# java=/JavaHome/java.exe
+
+javac=/usr/bin/javac
+java=/usr/bin/java
+
+
+
+# Editor: gvim
+# ================================================
+#   Create a soft link from /VimHome to the location of
+# 	my gvim editor installation:
+#			"/cygdrive/c/Program Files (x86)/Vim/vim82/"
+#gvim=/VimHome/gvim.exe
+
+gvim=/Applications/MacVim.app/Contents/bin/mvim
+
+# Compiler options:
+# ================================================
+# Xlint:
+xlint=
+# 	If you are using deprecated Java syntax, this will give more details
+xlint=-Xlint:unchecked
+# 	this will tell you if you are using deprecated Java syntax
+xlint=-Xlint
+cflags= $(xlint)
+
+# Runtime or Interpreter options:
+# ================================================
+#	turn on assertions or not
+assert=
+assert=-ea
+rflags= $(assert)
+
+# ================================================
+# ================================================

@@ -1,0 +1,26 @@
+==> mode 8: testing ok() (should abort)
+
+G=Ya:(G=Ne:(G=Fojui:(<Be:234><Co:473><Fojui:695>)
+-----|-----|G=He:(<Hacrege:863><He:650>)
+-----|-----|G=Ne:(<Me:620><Ne:536>)
+-----|G=Skeoxa:(G=Plo:(<Nociori:192><Plo:904>)
+-----|---------|G=Skeoxa:(<Qubespuqagra:820><Skeoxa:500>)
+-----|G=Ya:(G=Spu:(<Sno:490><Spu:600>)
+-----|-----|G=Ya:(<Titwi:377><Ya:624>)
+
+after messUpTree(10) -- it should abort!
+G=Ya:(G=Ne:(G=Fojui:(<Fojui:695><Co:473><Be:234>)
+-----|-----|G=He:(<Hacrege:863><He:650>)
+-----|-----|G=Ne:(<Me:620><Ne:536>)
+-----|G=Skeoxa:(G=Plo:(<Nociori:192><Plo:904>)
+-----|---------|G=Skeoxa:(<Qubespuqagra:820><Skeoxa:500>)
+-----|G=Ya:(G=Spu:(<Sno:490><Spu:600>)
+-----|-----|G=Ya:(<Titwi:377><Ya:624>)
+
+Exception in thread "main" java.lang.AssertionError: children are not sorted
+	at InternalNode.isSorted(InternalNode.java:248)
+	at Tree23.ok(Tree23.java:498)
+	at Tree23.ok(Tree23.java:504)
+	at Tree23.ok(Tree23.java:504)
+	at Tree23.ok(Tree23.java:492)
+	at Tree23.main(Tree23.java:559)

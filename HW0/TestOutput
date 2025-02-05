@@ -1,0 +1,54 @@
+file: TestOutput 
+
+Our BdayParadox.java produces these outputs for Makefile targets:
+
+		test1, test2, test3 and test4
+
+You must make sure that your program duplicate our
+output as closely as possible.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> make test1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+test 1:
+/JavaHome/java.exe -classpath bin BdayParadox 111 23 0
+
+===============The 23 birthdays are:
+Jul23, Jan31, Mar14, Mar29, Aug28, Dec2, May20, Jul17, Oct25, Jan11,
+Nov17, Dec6, Oct12, Nov16, Nov20, Aug27, Sep18, Nov13, Feb20, Aug4,
+Apr1, Jul30, Nov16,
+The 14-th bday and 23-th bday are equal: Nov16!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> make test2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+test 2:
+/JavaHome/java.exe -classpath bin BdayParadox 1111 23 0
+
+===============The 23 birthdays are:
+Dec23, Sep4, Feb15, Dec21, Aug9, Sep30, Oct13, Sep27, Jul8, Aug10,
+Jan8, Dec16, Oct6, Sep20, Mar13, Apr15, Dec22, Mar14, Jun27, Apr24,
+Dec3, Jul13, Dec10,
+No duplicates found in 23 birthdays!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> make test3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+test 3:
+/JavaHome/java.exe -classpath bin BdayParadox 111 20 1
+
+===============
+The total number of failed trials is 4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> make test4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+test 4:
+/JavaHome/java.exe -classpath bin BdayParadox 11 20 1
+
+===============
+The total number of failed trials is 2
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
