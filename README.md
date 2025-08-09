@@ -1,37 +1,71 @@
-# NYU CSCI-UA 310 — Basic Algorithms (Selected Homeworks)
+Here’s the portfolio-ready README for **NYU Algorithms** in the agreed format:
 
-This repository collects selected homework implementations from **NYU CSCI-UA 310: Basic Algorithms**. The aim isn’t to showcase “big projects,” but to demonstrate clean, correct implementations of classic algorithms, clear problem decompositions, and disciplined testing and documentation. Assignments are organized by folder (e.g., `HW0`, `HW3`, `HW5`, `HW7`). Each folder contains problem statements, working code, and, where relevant, analysis or write-ups.
+---
 
-## Tech & Conventions
+# Basic Algorithms (Java)
 
-* **Languages:** Python
-* **Environment:** Jupyter/CLI as appropriate
-* **Style:** Small, readable modules with inline docs and simple tests
+*New York University – College of Arts And Science*
 
-## Highlights
+## Course Context
 
-* `HW0` — Search algorithms
-* `HW3` — Merge sort; Prim’s algorithm; Trie / prefix tree
-* `HW5` — Prim’s algorithm
-* `HW7` — Prim’s algorithm
+This repository contains my programming assignments from **Basic Algorithms** at NYU, **Fall 2023 semester**.
+The course covered the design, analysis, and implementation of fundamental algorithms and data structures, with a focus on efficiency and problem-solving strategies.
+It built directly on prior programming coursework and laid the groundwork for more advanced topics in artificial intelligence, optimization, and large-scale systems.
+
+**Tech Stack:** Java (JDK) · Standard Java Libraries
+
+---
+
+## Project Highlights
+
+* **Assignment 1 — Algorithm Warm-Up** — Introduction to problem-solving and pseudocode translation into Java.
+* **Assignment 2 — Sorting Implementations** — Building and comparing classic sorting algorithms.
+* **Assignment 3 — Searching Techniques** — Implementing linear, binary, and optimized search methods.
+* **Assignment 4 — Recursion Practice** — Applying recursive solutions to computational problems.
+* **Assignment 5 — Dynamic Programming Intro** — Solving optimization problems with DP techniques.
+* **Assignment 6 — Graph Traversal** — Implementing BFS, DFS, and path-finding basics.
+* **Assignment 7 — Minimum Spanning Trees** — Using Prim’s and Kruskal’s algorithms on weighted graphs.
+* **Assignment 8 — Shortest Path Algorithms** — Implementing Dijkstra’s and Bellman-Ford algorithms.
+* **Assignment 9 — String Algorithms** — Pattern matching and substring search techniques.
+* **Assignment 10 — Final Project** — Integrating multiple algorithmic techniques in a larger-scale solution.
+
+---
+
+## Skills Developed
+
+* Analyzing time and space complexity (Big-O notation).
+* Designing and implementing algorithms for different problem types.
+* Working with core data structures: arrays, linked lists, stacks, queues, trees, and graphs.
+* Applying recursion, dynamic programming, and greedy strategies.
+* Implementing and comparing multiple solutions to optimize performance.
+* Translating problem statements into clear, efficient Java code.
+
+---
 
 ## How to Run
 
-Clone the repo and run scripts from their respective folders. For Python:
+Compile and run using the Java compiler or your preferred IDE:
 
 ```bash
-pip install -r requirements.txt  # if provided
-python <script>.py
+javac Main.java
+java Main
 ```
 
-Most solutions are self-contained and rely only on the standard library.
+(Some assignments may have differently named main classes.)
 
-## Notes for Reviewers
+---
 
-These are **course exercises** intended to demonstrate algorithmic thinking, correctness, and clarity—not oversized projects. Focus areas include:
+## What to Look For
 
-* Implementing standard algorithms from scratch (with time/space tradeoffs noted in comments)
-* Writing clear, testable functions with edge cases covered
-* Documenting rationale and complexity where appropriate
+* Well-structured, modular code following Java conventions.
+* Algorithmic solutions with clear complexity analysis.
+* Progressive application of increasingly sophisticated problem-solving techniques.
+
+---
+
+## Portfolio Note
+
+This project is part of my academic and professional coding portfolio.
+For more projects, visit my [GitHub profile](https://github.com/brynja-schultz).
 
 ---
