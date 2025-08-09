@@ -1,7 +1,3 @@
-Here’s the portfolio-ready README for **NYU Algorithms** in the agreed format:
-
----
-
 # Basic Algorithms (Java)
 
 *New York University – College of Arts And Science*
