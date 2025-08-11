@@ -17,7 +17,7 @@ It built directly on prior programming coursework and laid the groundwork for mo
 * **Homework 0 – Introductory Algorithm Warm-Up** – Basic problem-solving and pseudocode translation into Java.
 * **Homework 3 – Sorting Algorithms** – Implementation and comparison of multiple sorting techniques.
 * **Homework 5 – Graph Traversal** – BFS, DFS, and shortest path algorithms.
-* **Homework 7** – Dynamic Programming – Solving optimization problems using DP strategies.
+* **Homework 7 – Dynamic Programming** – Solving optimization problems using DP strategies.
   
 ---
 
