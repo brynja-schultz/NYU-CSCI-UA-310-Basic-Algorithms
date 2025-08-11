@@ -14,17 +14,11 @@ It built directly on prior programming coursework and laid the groundwork for mo
 
 ## Project Highlights
 
-* **Assignment 1 — Algorithm Warm-Up** — Introduction to problem-solving and pseudocode translation into Java.
-* **Assignment 2 — Sorting Implementations** — Building and comparing classic sorting algorithms.
-* **Assignment 3 — Searching Techniques** — Implementing linear, binary, and optimized search methods.
-* **Assignment 4 — Recursion Practice** — Applying recursive solutions to computational problems.
-* **Assignment 5 — Dynamic Programming Intro** — Solving optimization problems with DP techniques.
-* **Assignment 6 — Graph Traversal** — Implementing BFS, DFS, and path-finding basics.
-* **Assignment 7 — Minimum Spanning Trees** — Using Prim’s and Kruskal’s algorithms on weighted graphs.
-* **Assignment 8 — Shortest Path Algorithms** — Implementing Dijkstra’s and Bellman-Ford algorithms.
-* **Assignment 9 — String Algorithms** — Pattern matching and substring search techniques.
-* **Assignment 10 — Final Project** — Integrating multiple algorithmic techniques in a larger-scale solution.
-
+* **Homework 0 – Introductory Algorithm Warm-Up** – Basic problem-solving and pseudocode translation into Java.
+* **Homework 3 – Sorting Algorithms** – Implementation and comparison of multiple sorting techniques.
+* **Homework 5 – Graph Traversal** – BFS, DFS, and shortest path algorithms.
+* **Homework 7** – Dynamic Programming – Solving optimization problems using DP strategies.
+  
 ---
 
 ## Skills Developed
