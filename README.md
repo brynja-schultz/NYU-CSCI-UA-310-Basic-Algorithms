@@ -32,27 +32,6 @@ It built directly on prior programming coursework and laid the groundwork for mo
 
 ---
 
-## How to Run
-
-Compile and run using the Java compiler or your preferred IDE:
-
-```bash
-javac Main.java
-java Main
-```
-
-(Some assignments may have differently named main classes.)
-
----
-
-## What to Look For
-
-* Well-structured, modular code following Java conventions.
-* Algorithmic solutions with clear complexity analysis.
-* Progressive application of increasingly sophisticated problem-solving techniques.
-
----
-
 ## Portfolio Note
 
 This project is part of my academic and professional coding portfolio.
